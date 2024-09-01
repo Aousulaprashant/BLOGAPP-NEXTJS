@@ -61,6 +61,7 @@ export async function getStaticProps(context) {
 
   let alldata = [];
   const data = await readdir("blogData");
+  console.log(data);
 
   let file;
   for (let i = 0; i < data.length; i++) {
