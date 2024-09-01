@@ -1,0 +1,129 @@
+.slugH1{
+    color: rgb(255, 250, 250);
+}
+.container {
+    /* Add your styles here */
+    padding: 20px;
+    max-width: 60%;
+    text-align: justify;
+    margin-left: 20%;
+}
+.container h1{
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.container span{
+    color:rgb(114, 238, 73);
+}
+
+.container h3{
+    margin-top: 20px;
+    opacity: 0.5;
+}
+.blogh1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+.blogp {
+    font-size: 16px;
+    color: #666;
+  }
+.blogmain{
+   display: inline-block;
+   margin-left: 300px;
+}
+
+.blogmain h1{
+    font-size: xx-large;
+    text-align: center;
+    padding: 40px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+}
+.blogmain span{
+    color: rgb(114, 238, 73);
+}
+.blogheader{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.blogheader h2{
+    padding: 0px 0px 10px 0px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.blogheader p{
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    .blogmain {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    .blogmain {
+        margin-left: 50px;
+    }
+
+    .blogmain h1 {
+        font-size: x-large;
+        padding: 20px;
+        letter-spacing: 5px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+        margin-left: 0;
+    }
+
+    .blogmain {
+        margin-left: 0;
+        display: block;
+    }
+
+    .blogmain h1 {
+        font-size: large;
+        padding: 15px;
+        letter-spacing: 3px;
+    }
+
+    .container h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .blogheader {
+        gap: 20px;
+    }
+
+    .blogheader h2 {
+        font-size: large;
+    }
+
+    .blogheader p {
+        padding-bottom: 5px;
+    }
+}
