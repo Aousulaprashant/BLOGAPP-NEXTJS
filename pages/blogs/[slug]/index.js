@@ -7,8 +7,9 @@ const readfile = promisify(fs.readFile);
 
 export default function BlogPost(props) {
   // const { slug } = params;
-  console.log(props);
-  const [blog, setblog] = useState(props.data);
+
+  const [blog, setblog] = useState(props?.data);
+  console.log(blog?.title);
 
   // useEffect(() => {
   //   async function fetchData() {
@@ -52,13 +53,11 @@ export default function BlogPost(props) {
 export async function getStaticPaths() {
   return {
     paths: [
-      {
-        params: { slug: "GuideToNode" },
-        params: { slug: "cssFlexboxGuide" },
-        params: { slug: "UnderstandingReactjs" },
-      }, // See the "paths" section below
+      { params: { slug: "cssFlexboxGuide" } },
+      { params: { slug: "GuideToNode" } },
+      { params: { slug: "UnderstandingReactjs" } },
     ],
-    fallback: true, // false or "blocking"
+    fallback: true, // Set to "true" or "blocking" depending on your preference
   };
 }
 
