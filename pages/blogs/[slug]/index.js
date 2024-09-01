@@ -53,7 +53,7 @@ export async function getStaticPaths() {
   return {
     paths: [
       {
-        params: { slug: "GuidetoNode" },
+        params: { slug: "GuideToNode" },
         params: { slug: "cssFlexboxGuide" },
         params: { slug: "UnderstandingReactjs" },
       }, // See the "paths" section below
